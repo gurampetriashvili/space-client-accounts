@@ -1,0 +1,27 @@
+@if(client) {
+<mat-tab-group>
+    <mat-tab label="Details"> 
+        <mat-list>
+            <mat-list-item>Full name: {{client.name}} {{client.lastName}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Sex: {{client.sex}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Pin: {{client.pin}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Phone: {{client.phone}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Legal address : {{client.jurAddress.country}}, {{client.jurAddress.city}},
+                {{client.jurAddress.address}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Legal address : {{client.factAddress.country}}, {{client.factAddress.city}},
+                {{client.factAddress.address}}</mat-list-item>
+        </mat-list>
+    </mat-tab>
+    <mat-tab label="Accounts">
+        <app-accounts-list [clientId]="client.id"></app-accounts-list>
+    </mat-tab>
+   
+</mat-tab-group>
+
+
+}

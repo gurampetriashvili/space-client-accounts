@@ -1,0 +1,35 @@
+<form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+    <div>
+        <mat-form-field>
+            <mat-label>accountNumber</mat-label>
+            <input matInput type="number" formControlName="accountNumber">
+            @if (getField('accountNumber')?.invalid && (getField('accountNumber')?.dirty ||
+            getField('accountNumber')?.touched)) {
+            <app-error [field]="getField('accountNumber')"></app-error>
+            }
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>clientNumber</mat-label>
+            <input matInput formControlName="clientNumber" [value]="data.clientId">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>accountType</mat-label>
+            <mat-select formControlName="accountType">
+                <mat-option [value]="accTypes.Saving">{{accTypes.Saving}}</mat-option>
+                <mat-option [value]="accTypes.Current">{{accTypes.Current}}</mat-option>
+                <mat-option [value]="accTypes.Keep">{{accTypes.Keep}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>currency</mat-label>
+            <mat-select formControlName="currency">
+                <mat-option [value]="currencies.usd">{{currencies.usd}}</mat-option>
+                <mat-option [value]="currencies.gel">{{currencies.gel}}</mat-option>
+                <mat-option [value]="currencies.eur">{{currencies.eur}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <button type="submit" mat-stroked-button [disabled]="!accountForm.valid">Submit</button>
+    </div>
+</form>

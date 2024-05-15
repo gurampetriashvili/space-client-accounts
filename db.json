@@ -1,0 +1,110 @@
+{
+  "clients": [
+    {
+      "id": "d245",
+      "name": "asdasd",
+      "lastName": "asdasd",
+      "sex": "m",
+      "pin": 3123123,
+      "phone": 1231231,
+      "jurAddress": {
+        "country": "asd",
+        "city": "asd",
+        "address": "asd"
+      },
+      "factAddress": {
+        "country": "ads",
+        "city": "asd",
+        "address": "asd"
+      }
+    },
+    {
+      "id": "4914",
+      "name": "gggggg",
+      "lastName": "sdfsdf",
+      "sex": "f",
+      "pin": 12312312313,
+      "phone": 123123123,
+      "jurAddress": {
+        "country": "fds",
+        "city": "dfs",
+        "address": "sdf"
+      },
+      "factAddress": {
+        "country": "sdf",
+        "city": "sfd",
+        "address": "fsd"
+      }
+    },
+    {
+      "id": "024e",
+      "name": "aaaaa",
+      "lastName": "ffgs",
+      "sex": "m",
+      "pin": 34232434244,
+      "phone": 234234234,
+      "jurAddress": {
+        "country": "fsd",
+        "city": "fsd",
+        "address": "sdf"
+      },
+      "factAddress": {
+        "country": "fsd",
+        "city": "sdf",
+        "address": "sfdsfd"
+      }
+    },
+    {
+      "id": "b4ec",
+      "name": "asd",
+      "lastName": "ads",
+      "sex": "m",
+      "pin": 33121231233,
+      "phone": 123123123,
+      "jurAddress": {
+        "country": "asd",
+        "city": "asd",
+        "address": "asd"
+      },
+      "factAddress": {
+        "country": "asd",
+        "city": "asd",
+        "address": "asd"
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "id": "2a1e",
+      "accountNumber": 123333,
+      "clientNumber": "024e",
+      "accountType": "Saving",
+      "currency": "GEL",
+      "status": "closed"
+    },
+    {
+      "id": "7490",
+      "accountNumber": 123123432,
+      "clientNumber": "024e",
+      "accountType": "Saving",
+      "currency": "GEL",
+      "status": "open"
+    },
+    {
+      "id": "49e7",
+      "accountNumber": 234234234234,
+      "clientNumber": "024e",
+      "accountType": "Saving",
+      "currency": "EUR",
+      "status": "open"
+    },
+    {
+      "id": "3671",
+      "accountNumber": 234234,
+      "clientNumber": "b4ec",
+      "accountType": "Saving",
+      "currency": "GEL",
+      "status": "open"
+    }
+  ]
+}
